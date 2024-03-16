@@ -12,8 +12,8 @@
           </div>
         </div>
     <div class="product row">
-       <div class="col-md-4 my-2" *ngFor="let product of filteredProduct || productList">
-        <mat-card class="example-card" >
+       <div class="col-md-4 my-2 " *ngFor="let product of filteredProduct || productList" [routerLink]="['./',product.id]">
+        <mat-card class="card" >
             <mat-card-header>
               <mat-card-title>{{product.title}}</mat-card-title>
               <mat-card-subtitle>{{product.category}}</mat-card-subtitle>

@@ -1,0 +1,18 @@
+ <section class="container d-flex justify-content-center align-items-center">
+    <mat-card class="w-50 my-3" *ngIf="product">
+        <mat-card-header>
+          <mat-card-title>{{product.title}}</mat-card-title>
+          <mat-card-subtitle>{{product.category}}</mat-card-subtitle>
+        </mat-card-header>
+        <img mat-card-image [src]="product.image" height="200px" width="350px" alt="Photo of product">
+        <mat-card-content>
+            <p>
+                {{product.description}}
+            </p>
+          </mat-card-content>
+        <mat-card-actions>
+          <button mat-button>LIKE</button>
+          <button mat-button>SHARE</button>
+        </mat-card-actions>
+      </mat-card>
+  </section>
