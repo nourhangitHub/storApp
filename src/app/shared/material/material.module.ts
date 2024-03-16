@@ -10,6 +10,7 @@ import { MatTableModule } from '@angular/material/table';
 import { CdkTableModule } from '@angular/cdk/table';
 import { MatDialogModule } from '@angular/material/dialog';
 import {MatCheckboxModule} from '@angular/material/checkbox';
+import { MatPaginatorModule, } from "@angular/material/paginator";
 @NgModule({
   imports: [],
   exports: [
@@ -23,7 +24,8 @@ import {MatCheckboxModule} from '@angular/material/checkbox';
     CdkTableModule,
     MatTableModule,
     MatDialogModule,
-    MatCheckboxModule
+    MatCheckboxModule,
+    MatPaginatorModule,
   ],
 })
 export class MaterialModule {}
