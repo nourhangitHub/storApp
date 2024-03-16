@@ -1,0 +1,24 @@
+{
+    "login": {
+        "title": "LogIn",
+        "userName": "User Name",
+        "password": "Password",
+        "isRequired": "field is required",
+        "invalid": "invalid userName and password"
+    },
+
+    "admin": {
+       "allProduct": "All Products", 
+       "addProduct": "Add Product",
+       "editProduct": "Edit Product",
+       "id": "ID",
+       "price": "Price",
+       "category": "Category",
+       "title": "Title",
+       "image": "put img url",
+       "description": "Description",
+       "add": "Add",
+       "back": "Back",
+       "submit": "Submit"
+    }
+}

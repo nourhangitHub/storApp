@@ -1,0 +1,12 @@
+<div class="container" *ngIf="product">
+    <h3></h3>
+    <h3>{{ "admin.editProduct" | translate }} </h3>
+    <app-product-form [product]="product"></app-product-form>
+</div>
+
+<ngx-spinner bdColor="rgba(51,51,51,0.8)"
+size="medium"
+color="#fff"
+type="ball-scale-multiple">
+<p style="font-size: 20px; color: white">Loading...</p>
+</ngx-spinner>

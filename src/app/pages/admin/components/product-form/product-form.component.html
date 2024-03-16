@@ -1,0 +1,28 @@
+<form [formGroup]="productForm" class="my-3" >
+    <div class="row">
+        <mat-form-field class="col-md-6">
+            <input matInput type="text" placeholder="{{ 'admin.title' | translate }}" formControlName="title">
+          </mat-form-field>
+          <mat-form-field class="col-md-6">
+            <input matInput type="text" placeholder="{{ 'admin.price' | translate }}" formControlName="price">
+          </mat-form-field>
+          <mat-form-field class="col-md-6">
+            <mat-label>{{ "admin.category" | translate }}</mat-label>
+            <select matNativeControl formControlName="category">
+              <option [value]="category" *ngFor="let category of categories">{{category}}</option>
+            </select>
+          </mat-form-field>
+          <mat-form-field class="col-md-6">
+            <input matInput type="text" placeholder="{{ 'admin.image' | translate }}" formControlName="image">
+          </mat-form-field>
+          <mat-form-field class="col-md-12">
+            <mat-label>{{ 'admin.description' | translate }}</mat-label>
+            <textarea matInput placeholder="{{ 'admin.description' | translate }}"  formControlName="description"></textarea>
+          </mat-form-field>
+    </div>
+   <div class="d-flex justify-content-between">
+    <a mat-raised-button color="accent" routerLink="../">{{ 'admin.back' | translate }}</a>
+    <a mat-raised-button color="primary" (click)="submit()">{{ 'admin.submit' | translate }}</a>
+   </div>
+  </form>
+  

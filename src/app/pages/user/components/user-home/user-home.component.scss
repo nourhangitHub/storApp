@@ -1,0 +1,21 @@
+.user-home {
+    display: flex;
+    flex-direction: row;
+    margin: 1rem 0;
+
+    .filters {
+        width: 20dvw;
+    }
+
+    .product {
+        width: 80dvw;
+    }
+
+    mat-card-title {
+        font-size: 14px;
+        overflow: hidden;
+        width: 50%;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+}

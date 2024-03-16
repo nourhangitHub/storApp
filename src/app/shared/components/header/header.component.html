@@ -1,0 +1,11 @@
+<mat-toolbar class="header" color="primary">
+    <div class="left-side">
+        <img class="logo-icon " alt="money-logo" src="../../../../favicon.ico">
+        <span>Store App</span>
+    </div>
+    <div class="right-side">
+        <button mat-raised-button class="m-3" (click)="switchLanguage()">
+            <span>{{ currentLang === "en" ? "عربى" : "English" }}</span>
+        </button>
+    </div>
+  </mat-toolbar>
